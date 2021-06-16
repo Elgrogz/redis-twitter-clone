@@ -1,0 +1,25 @@
+html
+  head
+    link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css')
+  body
+    div.min-h-screen.bg-gray-50.flex.flex-col.justify-center.py-12(class='sm:px-6 lg:px-8')
+      div(class='sm:mx-auto sm:w-full sm:max-w-md')
+        h2.mt-6.text-center.text-3xl.leading-9.font-extrabold.text-gray-900
+          | Sign in to Flipper
+      div.mt-8(class='sm:mx-auto sm:w-full sm:max-w-md')
+        .bg-white.py-8.px-4.shadow(class='sm:rounded-lg sm:px-10')
+          form(action='' method='POST')
+            div
+              label.block.text-sm.font-medium.leading-5.text-gray-700(for='username')
+                | Username
+              .mt-1.rounded-md.shadow-sm
+                input#username.appearance-none.block.w-full.px-3.py-2.border.border-gray-300.rounded-md.placeholder-gray-400.transition.duration-150.ease-in-out(type='text' name="username" required='required' class='focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5')
+            .mt-6
+              label.block.text-sm.font-medium.leading-5.text-gray-700(for='password')
+                | Password
+              .mt-1.rounded-md.shadow-sm
+                input#password.appearance-none.block.w-full.px-3.py-2.border.border-gray-300.rounded-md.placeholder-gray-400.transition.duration-150.ease-in-out(type='password' name="password" required='required' class='focus:outline-none focus:shadow-outline-blue focus:border-blue-300 sm:text-sm sm:leading-5')
+            .mt-6
+              span.block.w-full.rounded-md.shadow-sm
+                button.w-full.flex.justify-center.py-2.px-4.border.border-transparent.text-sm.font-medium.rounded-md.text-white.bg-blue-600.transition.duration-150.ease-in-out(type='submit' class='hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700')
+                  | Sign in

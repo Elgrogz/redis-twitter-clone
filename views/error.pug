@@ -1,0 +1,13 @@
+html
+  head
+    link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css')
+  body
+    .min-h-screen.flex.items-center.justify-center.bg-gray-50.py-12.px-4(class='sm:px-6 lg:px-8')
+      .max-w-md.w-full
+        div
+          h2.mt-6.text-center.text-3xl.leading-9.font-extrabold.text-gray-900
+            | Error
+          h2.mt-6.text-center.text-2xl.leading-9.font-extrabold.text-gray-900
+            | #{message}
+          a.mt-6.text-center.text-1xl.leading-9.font-extrabold.text-blue-500.block(href='/')
+            | Back
